@@ -12,6 +12,7 @@ Add rectangle button
 Find "Wow!" object
 Find "Cool" object
 Find "Meh" object
+Find "Bad" object
 
 #ifdef BUILD_FOR_1.37.0
 Add "Version: 1.37.0" text
