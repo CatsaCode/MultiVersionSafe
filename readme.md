@@ -35,3 +35,14 @@ Compiler option for version is needed
 * Write BUILD\_FOR\_VERSION
 * Commit
 * Switch to main branch
+
+Need to update from version branch
+
+* Switch to version branch
+* Commit hashA
+* Commit hashB
+* Commit hashC
+* Switch to main branch
+* Cherry-pick hashA~..hashC (will duplicate the commits, but there's only a few)
+* Switch to version branch
+* Merge from main branch
