@@ -6,7 +6,11 @@ MultiVersionSafe
 * Commit
 * Commit
 
+
+
 New version is released
+
+
 
 * Bump commit
 * Create version branch
@@ -23,7 +27,11 @@ New version is released
 * Commit
 * Commit
 
+
+
 Compiler option for version is needed
+
+
 
 * Switch to main branch
 * Add BUILD\_FOR\_MAIN
@@ -36,7 +44,11 @@ Compiler option for version is needed
 * Commit
 * Switch to main branch
 
+
+
 Need to update from version branch
+
+
 
 * Switch to version branch
 * Commit hashA
@@ -46,3 +58,20 @@ Need to update from version branch
 * Cherry-pick hashA~..hashC (will duplicate the commits, but there's only a few)
 * Switch to version branch
 * Merge from main branch
+
+
+
+Need to update from version branch without leaving duplicates
+
+
+
+* Switch to version branch
+* Commit hashA
+* Commit hashB
+* Commit hashC
+* Switch to main branch
+* Cherry-pick hashA~..hashC (creates duplicates)
+* Switch to version branch
+* Reset hashA~1
+* Restore . (all)
+* Merge from main
